@@ -4,33 +4,45 @@
 }
 
 
-<h1>Index</h1>
-<table class="table table-bordered table-striped" style="width:100%">
-    <thead>
-        <tr>
-            <th>
-                @*類別名稱*@
-                Category Name
-            </th>
-            <th>
-                @*顯示順序*@
-                Display Order
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var obj in Model)
-        {
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h3 class="text-primary"> 類別清單</h3>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle-fill"></i> &nbsp; 新增類別
+            </a>
+        </div>
+    </div>
+    <br>
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
             <tr>
-                <td width ="50%"> 
-                    @obj.Name
-                </td>
-                <td width="30%">
-                    @obj.DisplayOrder
-                </td>
+                <th>
+                    @*類別名稱*@
+                    Category Name
+                </th>
+                <th>
+                    @*顯示順序*@
+                    Display Order
+                </th>
             </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td width="50%">
+                        @obj.Name
+                    </td>
+                    <td width="30%">
+                        @obj.DisplayOrder
+                    </td>
+                </tr>
 
-        }
-    </tbody>
-    
-</table>
+            }
+        </tbody>
+
+    </table>
+</div>
