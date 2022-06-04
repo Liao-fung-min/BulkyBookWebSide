@@ -1,23 +1,24 @@
 ﻿@model Category
 
-<form method="post">
+<form method="post" asp-action ="DeletePost">
+    <input asp-for="Id" hidden/>
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary">新增類別</h2>
+            <h2 class="text-primary">刪除類別</h2>
             <hr />
         </div>
-        <div asp-validation-summary="All"></div>
+        @*<div asp-validation-summary="All"></div>*@
         <div class="mb-3">
             <label asp-for="Name">名稱</label>
-            <input asp-for="Name" class="form-control" />
-            <span asp-validation-for="Name" class="text-danger"></span>
+            <input asp-for="Name" disabled class="form-control" />
+            <span asp-validation-for="Name"  class="text-danger"></span>
         </div>
         <div class="mb-3">
             <label asp-for="DisplayOrder">顯示順序</label>
-            <input asp-for="DisplayOrder" class="form-control" />
+            <input asp-for="DisplayOrder" disabled class="form-control" />
             <span asp-validation-for="DisplayOrder" class="text-danger"></span>
         </div>
-        <button type="submit" class="btn btn-light" style="width:150px">新增</button>
+        <button type="submit" class="btn btn-danger" style="width:150px">刪除</button>
         <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">
             返回列表
         </a>
