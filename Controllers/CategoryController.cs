@@ -39,7 +39,12 @@ namespace BulkyBookWeb.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
+                TempData["success"] = "類別新增成功";
+
                 return RedirectToAction("Index");//返回到Index
+            }
+            else {
+                TempData["error"] = "類別新增失敗";
             }
             return View(obj);
 
@@ -78,7 +83,12 @@ namespace BulkyBookWeb.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["success"] = "類別更新成功";
+               
                 return RedirectToAction("Index");//返回到Index
+            }
+            else {
+                TempData["error"] = "類別更新失敗";
             }
             return View(obj);
 
@@ -113,9 +123,17 @@ namespace BulkyBookWeb.Controllers
             {
                 return NotFound();
             }
-
-            _db.Categories.Remove(obj);
-            _db.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Remove(obj);
+                _db.SaveChanges();
+                TempData["success"] = "類別刪除成功";
+            }
+            else {
+                TempData["error"] = "類別刪除失敗";
+            }
+           
+            
             return RedirectToAction("Index");
 
         }
