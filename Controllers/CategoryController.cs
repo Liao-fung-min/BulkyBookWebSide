@@ -3,22 +3,23 @@
 using Microsoft.AspNetCore.Mvc;
 
 using BulkyBook.DataAccess;
+using BulkyBook.DataAccess.Repository.IRepository;
 
 namespace BulkyBookWeb.Controllers
 {
 
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ICategoryRepository _db;
 
         //建構子用來
-        public CategoryController(ApplicationDbContext db)
+        public CategoryController(ICategoryRepository db)
         {
             _db = db;
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> objCategoryList = _db.Categories.ToList();
+            IEnumerable<Category> objCategoryList = _db.GetAll();
             return View(objCategoryList);
         }
         //Get
@@ -39,13 +40,14 @@ namespace BulkyBookWeb.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(obj);
-                _db.SaveChanges();
+                _db.Add(obj);
+                _db.Save();
                 TempData["success"] = "類別新增成功";
 
                 return RedirectToAction("Index");//返回到Index
             }
-            else {
+            else
+            {
                 TempData["error"] = "類別新增失敗";
             }
             return View(obj);
@@ -60,15 +62,15 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
 
             }
-            var categoryFromDb = _db.Categories.Find(id);
-            //var category = _db.Categories.FirstOrDefault(u => u.Id == id);
+            //var categoryFromDb = _db.Categories.Find(id);
+            var categoryFromDbFirst = _db.GetFirstOrDefault(u => u.Name == "Id");
             //var category = _db.Categories.SingleOrDefault(u => u.Id == id);
 
-            if (categoryFromDb == null)
+            if (categoryFromDbFirst == null)
             {
                 return NotFound();
             }
-            return View(categoryFromDb);
+            return View(categoryFromDbFirst);
         }
 
         //Post
@@ -83,13 +85,14 @@ namespace BulkyBookWeb.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(obj);
-                _db.SaveChanges();
+                _db.Update(obj);
+                _db.Save();
                 TempData["success"] = "類別更新成功";
-               
+
                 return RedirectToAction("Index");//返回到Index
             }
-            else {
+            else
+            {
                 TempData["error"] = "類別更新失敗";
             }
             return View(obj);
@@ -104,38 +107,39 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
 
             }
-            var categoryFromDb = _db.Categories.Find(id);
-            //var category = _db.Categories.FirstOrDefault(u => u.Id == id);
+            //var categoryFromDb = _db.Categories.Find(id);
+            var categoryFromDbFist = _db.GetFirstOrDefault(u => u.Id == id);
             //var category = _db.Categories.SingleOrDefault(u => u.Id == id);
 
-            if (categoryFromDb == null)
+            if (categoryFromDbFist == null)
             {
                 return NotFound();
             }
-            return View(categoryFromDb);
+            return View(categoryFromDbFist);
         }
 
         //Post
-        [HttpPost,ActionName("Delete")]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? id)
         {
-            var obj = _db.Categories.Find(id);
+            var obj = _db.GetFirstOrDefault(u => u.Id == id);
             if (obj == null)
             {
                 return NotFound();
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Remove(obj);
-                _db.SaveChanges();
+                _db.Remove(obj);
+                _db.Save();
                 TempData["success"] = "類別刪除成功";
             }
-            else {
+            else
+            {
                 TempData["error"] = "類別刪除失敗";
             }
-           
-            
+
+
             return RedirectToAction("Index");
 
         }

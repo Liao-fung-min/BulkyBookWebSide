@@ -1,5 +1,7 @@
 
 using BulkyBook.DataAccess;
+using BulkyBook.DataAccess.Repository;
+using BulkyBook.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnecting")
     ));
+//DI 生命週期
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 //要新增razor的註冊
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 var app = builder.Build();
