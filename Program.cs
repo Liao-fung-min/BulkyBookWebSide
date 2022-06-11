@@ -12,7 +12,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
     builder.Configuration.GetConnectionString("DefaultConnecting")
     ));
 //DI 生命週期
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitWork>();
 //要新增razor的註冊
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 var app = builder.Build();
