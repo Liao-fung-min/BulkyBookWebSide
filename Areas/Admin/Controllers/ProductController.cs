@@ -22,61 +22,31 @@ namespace BulkyBookWeb.Controllers
             IEnumerable<Category> objCategoryList = _unitOfWork.Category.GetAll();
             return View(objCategoryList);
         }
+
+
         //Get
-        public IActionResult Create()
+        public IActionResult Upsert(int? id)
         {
-            return View();
-        }
-
-        //Post
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Create(Category obj)
-        {
-            if (obj.Name == obj.DisplayOrder.ToString())
+            Product product = new();
+            if (id == null || id == 0)
             {
-                ModelState.AddModelError("Name", "輸入的順序不是相對應的名稱");
+                //新增產品
+                return View(product);
 
-            }
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.Category.Add(obj);
-                _unitOfWork.Save();
-                TempData["success"] = "類別新增成功";
-
-                return RedirectToAction("Index");//返回到Index
             }
             else
             {
-                TempData["error"] = "類別新增失敗";
+
+                //更新產品
             }
-            return View(obj);
 
-        }
-
-        //Get
-        public IActionResult Edit(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-
-            }
-            //var categoryFromDb = _db.Categories.Find(id);
-            var categoryFromDbFirst = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
-            //var category = _db.Categories.SingleOrDefault(u => u.Id == id);
-
-            if (categoryFromDbFirst == null)
-            {
-                return NotFound();
-            }
-            return View(categoryFromDbFirst);
+            return View(product);
         }
 
         //Post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category obj)
+        public IActionResult Upsert(Category obj)
         {
             if (obj.Name == obj.DisplayOrder.ToString())
             {

@@ -1,10 +1,10 @@
 ﻿<div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
-            <h3 class="text-primary"> 產品清單</h3>
+            <h3 class="text-primary"> 類別清單</h3>
         </div>
         <div class="col-6 text-end">
-            <a asp-controller="Product" asp-action="Create" class="btn btn-primary">
+            <a asp-controller="Product" asp-action="Upsert" class="btn btn-primary">
                 <i class="bi bi-plus-circle-fill"></i> &nbsp; 新增產品
             </a>
         </div>
@@ -13,12 +13,11 @@
     <table class="table table-bordered table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>標題</th>
+                <th>Title</th>
                 <th>ISBN</th>
-                <th>價錢</th>
-                <th>作者</th>
-                <th>類別</th>
-                <th></th>
+                <th>Price</th>
+                <th>Author</th>
+                <th>Category</th>
             </tr>
         </thead>
     </table>
