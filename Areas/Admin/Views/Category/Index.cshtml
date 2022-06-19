@@ -2,11 +2,11 @@
 @{
     ViewData["Title"] = "Index";
 }
-<partial name ="_Notification" />
+<partial name="_Notification" />
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
-            <h3 class="text-primary"> 類別清單</h3>
+            <h3 class="text-primary"> 類別</h3>
         </div>
         <div class="col-6 text-end">
             <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
@@ -19,12 +19,10 @@
         <thead>
             <tr>
                 <th>
-                    @*類別名稱*@
-                    Category Name
+                    類別名稱
                 </th>
                 <th>
-                    @*顯示順序*@
-                    Display Order
+                    顯示順序
                 </th>
                 <th>
 

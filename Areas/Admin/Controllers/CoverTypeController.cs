@@ -59,14 +59,14 @@ namespace BulkyBookWeb.Controllers
 
             }
             
-            var coverTypeFromDbFist = _unitOfWork.CoverType.GetFirstOrDefault(u => u.Id == id);
+            var coverTypeFromDbFirst = _unitOfWork.CoverType.GetFirstOrDefault(u => u.Id == id);
            
 
-            if (coverTypeFromDbFist == null)
+            if (coverTypeFromDbFirst == null)
             {
                 return NotFound();
             }
-            return View(coverTypeFromDbFist);
+            return View(coverTypeFromDbFirst);
         }
 
         //Post
@@ -100,14 +100,14 @@ namespace BulkyBookWeb.Controllers
 
             }
 
-            var coverTypeFromDbFist = _unitOfWork.CoverType.GetFirstOrDefault(u => u.Id == id);
+            var coverTypeFromDbFirst = _unitOfWork.CoverType.GetFirstOrDefault(u => u.Id == id);
 
 
-            if (coverTypeFromDbFist == null)
+            if (coverTypeFromDbFirst == null)
             {
                 return NotFound();
             }
-            return View(coverTypeFromDbFist);
+            return View(coverTypeFromDbFirst);
         }
 
         //Post

@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 using BulkyBook.DataAccess;
 using BulkyBook.DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using BulkyBook.Models.ViewModels;
 
 namespace BulkyBookWeb.Controllers
 {
@@ -27,11 +29,44 @@ namespace BulkyBookWeb.Controllers
         //Get
         public IActionResult Upsert(int? id)
         {
-            Product product = new();
+            //Product product = new();
+            //IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(c => new SelectListItem
+            //{
+            //    Text = c.Name,
+            //    Value = c.Id.ToString(),
+
+            //});
+            //IEnumerable<SelectListItem> CoverTypeList = _unitOfWork.Category.GetAll().Select(c => new SelectListItem
+            //{
+            //    Text = c.Name,
+            //    Value = c.Id.ToString(),
+
+            //});
+
+            ProductVM productVM = new()
+            {
+                Product = new(),
+                CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+
+                }),
+                CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+
+                }),
+
+            };
+
             if (id == null || id == 0)
             {
+                //ViewBag.CategoryList = CategoryList;
+                //ViewData["CoverTypeList"] = CategoryList;
                 //新增產品
-                return View(product);
+                return View(productVM);
 
             }
             else
@@ -40,7 +75,7 @@ namespace BulkyBookWeb.Controllers
                 //更新產品
             }
 
-            return View(product);
+            return View(productVM);
         }
 
         //Post
