@@ -81,24 +81,20 @@ namespace BulkyBookWeb.Controllers
         //Post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Category obj)
+        public IActionResult Upsert(ProductVM obj,IFormFile file)
         {
-            if (obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("Name", "輸入的順序不是相對應的名稱");
-
-            }
+            
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Update(obj);
+                //_unitOfWork..Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "類別更新成功";
+                TempData["success"] = "產品更新成功";
 
                 return RedirectToAction("Index");//返回到Index
             }
             else
             {
-                TempData["error"] = "類別更新失敗";
+                TempData["error"] = "產品更新失敗";
             }
             return View(obj);
 
