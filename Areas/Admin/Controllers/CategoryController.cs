@@ -42,13 +42,13 @@ namespace BulkyBookWeb.Controllers
             {
                 _unitOfWork.Category.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "類別新增成功";
+                ViewData["success"] = "類別新增成功";
 
                 return RedirectToAction("Index");//返回到Index
             }
             else
             {
-                TempData["error"] = "類別新增失敗";
+                ViewData["error"] = "類別新增失敗";
             }
             return View(obj);
 
@@ -87,13 +87,13 @@ namespace BulkyBookWeb.Controllers
             {
                 _unitOfWork.Category.Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "類別更新成功";
+                ViewData["success"] = "類別更新成功";
 
                 return RedirectToAction("Index");//返回到Index
             }
             else
             {
-                TempData["error"] = "類別更新失敗";
+                ViewData["error"] = "類別更新失敗";
             }
             return View(obj);
 
@@ -132,11 +132,12 @@ namespace BulkyBookWeb.Controllers
             {
                 _unitOfWork.Category.Remove(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "類別刪除成功";
+                ViewData["success"] = "類別刪除成功";
+                
             }
             else
             {
-                TempData["error"] = "類別刪除失敗";
+                ViewData["error"] = "類別刪除失敗";
             }
 
 

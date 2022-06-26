@@ -1,11 +1,11 @@
 ﻿
-@if (TempData["success"] != null)
+@if (ViewData["success"] != null)
 {
     <script type="text/javascript">
         Swal.fire({
         position: 'center',
         icon: 'success',
-        title: '@TempData["success"]',
+        title: '@ViewData["success"]',
         showConfirmButton: false,
         timer: 2000
         })
@@ -13,13 +13,13 @@
    
 }
 
-@if (TempData["error"] != null)
+@if (ViewData["error"] != null)
 {
      <script type="text/javascript">
           Swal.fire({
           icon: 'error',
           title: '糟糕',
-          text: '@TempData["error"]',
+          text: '@ViewData["error"]',
           footer: '<a>請撥打客服0800-654-175</a>'
         })
     </script>
