@@ -23,8 +23,8 @@ namespace BulkyBookWeb.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<Category> objCategoryList = _unitOfWork.Category.GetAll();
-            return View(objCategoryList);
+
+            return View();
         }
 
 
@@ -161,5 +161,14 @@ namespace BulkyBookWeb.Controllers
             return RedirectToAction("Index");
 
         }
+        #region
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var productList = _unitOfWork.Product.GetAll();
+            return Json(new { data = productList });
+
+        }
+        #endregion
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9olg4V91x2nhPc0UuJr4trX00ckNthvnQBaHLTqK3Qo=",
+  "Hash": "1jVw/q2alm6SR30mssGroLnrM5+QYHfjovCDI2+4xSQ=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\images\\products\\0297ff51-fc33-40ee-947d-50be232eed1c.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/products/0297ff51-fc33-40ee-947d-50be232eed1c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\0297ff51-fc33-40ee-947d-50be232eed1c.jpg"
     },
     {
       "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\images\\products\\20cb73bb-1e76-4a76-9404-b0c911426cff.jpg",
