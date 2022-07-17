@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1jVw/q2alm6SR30mssGroLnrM5+QYHfjovCDI2+4xSQ=",
+  "Hash": "/ypNA94zZJqugnQGCdXlqPKVewnHZyfe++rHKXSBJzo=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -153,6 +153,23 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\3a6a7a1e-284c-4bf4-8fb7-96002337905a.jpg"
     },
     {
+      "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\images\\products\\4b169f75-87ca-4dcb-9e82-9f899fa27fda.jpg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/products/4b169f75-87ca-4dcb-9e82-9f899fa27fda.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\4b169f75-87ca-4dcb-9e82-9f899fa27fda.jpg"
+    },
+    {
       "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\images\\products\\90b2b227-8637-456c-80c8-cce62b91b677.jpg",
       "SourceId": "BulkyBookWeb",
       "SourceType": "Discovered",
@@ -170,6 +187,40 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\90b2b227-8637-456c-80c8-cce62b91b677.jpg"
     },
     {
+      "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\images\\products\\92bca7ca-3c9a-4fbd-a829-81d6196b1766.jpeg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/products/92bca7ca-3c9a-4fbd-a829-81d6196b1766.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\92bca7ca-3c9a-4fbd-a829-81d6196b1766.jpeg"
+    },
+    {
+      "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\images\\products\\a53cef73-437a-40d7-babd-f4713f871605.jpeg",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/products/a53cef73-437a-40d7-babd-f4713f871605.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\a53cef73-437a-40d7-babd-f4713f871605.jpeg"
+    },
+    {
       "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\images\\products\\c1d8fdaf-fd72-4301-9487-74aa8dc65874.jpg",
       "SourceId": "BulkyBookWeb",
       "SourceType": "Discovered",
@@ -185,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\c1d8fdaf-fd72-4301-9487-74aa8dc65874.jpg"
+    },
+    {
+      "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\js\\productGetAll.js",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "js/productGetAll.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\productGetAll.js"
     },
     {
       "Identity": "C:\\BulkyBookWeb\\BulkyBookWeb\\wwwroot\\js\\site.js",

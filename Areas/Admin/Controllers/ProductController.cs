@@ -73,7 +73,7 @@ namespace BulkyBookWeb.Controllers
             }
             else
             {
-
+                productVM.Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
                 //更新產品
             }
 
@@ -96,14 +96,30 @@ namespace BulkyBookWeb.Controllers
                     var uploads = Path.Combine(wwwRootPath, @"images\products");
                     var extension = Path.GetExtension(file.FileName);
 
+                    if (obj.Product.ImageUrl != null)
+                    {
+                        var oldImagePath = Path.Combine(wwwRootPath, obj.Product.ImageUrl.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
+
                     using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                     {
                         file.CopyTo(fileStreams);
                     }
                     obj.Product.ImageUrl = @"\images\products\" + fileName + extension;
-
+                    if (obj.Product.Id == 0)
+                    {
+                        _unitOfWork.Product.Add(obj.Product);
+                    }
+                    else
+                    {
+                        _unitOfWork.Product.Update(obj.Product);
+                    }
                 }
-                _unitOfWork.Product.Add(obj.Product);
+
                 _unitOfWork.Save();
                 TempData["success"] = "產品新增成功";
 
@@ -117,56 +133,34 @@ namespace BulkyBookWeb.Controllers
 
         }
 
-        //Get
-        public IActionResult Delete(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-
-            }
-            //var categoryFromDb = _db.Categories.Find(id);
-            var categoryFromDbFist = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
-            //var category = _db.Categories.SingleOrDefault(u => u.Id == id);
-
-            if (categoryFromDbFist == null)
-            {
-                return NotFound();
-            }
-            return View(categoryFromDbFist);
-        }
-
-        //Post
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeletePost(int? id)
-        {
-            var obj = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
-            if (obj == null)
-            {
-                return NotFound();
-            }
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.Category.Remove(obj);
-                _unitOfWork.Save();
-                TempData["success"] = "類別刪除成功";
-            }
-            else
-            {
-                TempData["error"] = "類別刪除失敗";
-            }
-
-
-            return RedirectToAction("Index");
-
-        }
-        #region
+        #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
         {
-            var productList = _unitOfWork.Product.GetAll();
+            var productList = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
             return Json(new { data = productList });
+
+        }
+
+        //Post
+        [HttpDelete]
+        public IActionResult Delete(int? id)
+        {
+            var obj = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
+            if (obj == null)
+            {
+                return Json(new { success = false, message = "刪除時錯誤" });
+            }
+            var oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, obj.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+
+            _unitOfWork.Product.Remove(obj);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "刪除成功" });
+
 
         }
         #endregion

@@ -5,12 +5,14 @@ i:{00000000-0000-0000-0000-000000000000}:BulkyBook.Models
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.models\bin\debug\net6.0\bulkybook.models.dll
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybook.models\bin\debug\net6.0\bulkybook.models.dll
 ++相依性
-i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:>2498
-i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>2499
-i:{a54cd79c-ee12-4ee8-9773-ec8443b168c3}:>2497
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4737
+i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:>2561
+i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>2562
+i:{a54cd79c-ee12-4ee8-9773-ec8443b168c3}:>2560
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4859
 ++ViewModels
 i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:c:\bulkybookweb\bulkybook.models\viewmodels\
+++ProductVM.cs
+i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:c:\bulkybookweb\bulkybook.models\viewmodels\productvm.cs
 ++Category.cs
 i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:c:\bulkybookweb\bulkybook.models\category.cs
 ++CoverType.cs
@@ -33,8 +35,6 @@ i:{d66a03e9-b341-4b00-a9df-248553e5c357}:架構
 i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:套件
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:套件
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:套件
-++ProductVM.cs
-i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:c:\bulkybookweb\bulkybook.models\viewmodels\productvm.cs
 ++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
 i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
@@ -56,7 +56,7 @@ i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\mi
 i:{a54cd79c-ee12-4ee8-9773-ec8443b168c3}:c:\bulkybookweb\bulkybook.utility\microsoft.netcore.app
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\microsoft.netcore.app
 ++Microsoft.AspNetCore.Mvc.ViewFeatures (2.2.0)
-i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:>4789
+i:{127b7ac6-2fec-4fd6-8f41-4392386b3fa0}:>4906
 ++BulkyBook.DataAccess
 i:{00000000-0000-0000-0000-000000000000}:BulkyBook.DataAccess
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybook.dataaccess\bin\debug\net6.0\bulkybook.dataaccess.dll
@@ -71,6 +71,8 @@ i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\mi
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\migrations\20220611174848_addcovertypetodb.cs
 ++20220612095956_addProductToDb.cs
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\migrations\20220612095956_addproducttodb.cs
+++20220626054246_CoverTypeId.cs
+i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\migrations\20220626054246_covertypeid.cs
 ++ApplicationDbContextModelSnapshot.cs
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\migrations\applicationdbcontextmodelsnapshot.cs
 ++Repository
@@ -86,6 +88,8 @@ i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\mi
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\migrations\20220611174848_addcovertypetodb.designer.cs
 ++20220612095956_addProductToDb.Designer.cs
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\migrations\20220612095956_addproducttodb.designer.cs
+++20220626054246_CoverTypeId.Designer.cs
+i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\migrations\20220626054246_covertypeid.designer.cs
 ++IRepository
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\repository\irepository\
 ++CategoryRepository.cs
@@ -114,17 +118,17 @@ i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\users\publi\.nuget\packages\microsof
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\users\publi\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.5\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 ++Microsoft.EntityFrameworkCore (6.0.5)
-i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>4787
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4786
+i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>4902
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4913
 ++Microsoft.EntityFrameworkCore.Relational (6.0.5)
-i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>4793
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4792
+i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>4907
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4916
 ++Microsoft.EntityFrameworkCore.SqlServer (6.0.5)
-i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>4791
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4788
+i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>4904
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4914
 ++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.5)
-i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>4795
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4796
+i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:>4909
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4918
 ++ICategoryRepository.cs
 i:{de57a1ff-49ac-404c-ac1f-f19cbfb21a65}:c:\bulkybookweb\bulkybook.dataaccess\repository\irepository\icategoryrepository.cs
 ++ICoverTypeRepository .cs
@@ -142,11 +146,50 @@ i:{a54cd79c-ee12-4ee8-9773-ec8443b168c3}:c:\bulkybookweb\bulkybook.utility\sd.cs
 ++BulkyBookWeb
 i:{00000000-0000-0000-0000-000000000000}:BulkyBookWeb
 ++Connected Services 
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4738
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4860
+++SQL Server 資料庫 (ConnectionStrings:DefaultConnecting)
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4998
 ++Properties
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\properties\
+++launchSettings.json
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\properties\launchsettings.json
 ++wwwroot
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\
+++css
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\css\
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\bootstrap\dist\css\
+++images
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\
+++products
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\products\
+++0297ff51-fc33-40ee-947d-50be232eed1c.jpg
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\products\0297ff51-fc33-40ee-947d-50be232eed1c.jpg
+++20cb73bb-1e76-4a76-9404-b0c911426cff.jpg
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\products\20cb73bb-1e76-4a76-9404-b0c911426cff.jpg
+++3a6a7a1e-284c-4bf4-8fb7-96002337905a.jpg
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\products\3a6a7a1e-284c-4bf4-8fb7-96002337905a.jpg
+++4b169f75-87ca-4dcb-9e82-9f899fa27fda.jpg
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\products\4b169f75-87ca-4dcb-9e82-9f899fa27fda.jpg
+++90b2b227-8637-456c-80c8-cce62b91b677.jpg
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\products\90b2b227-8637-456c-80c8-cce62b91b677.jpg
+++c1d8fdaf-fd72-4301-9487-74aa8dc65874.jpg
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\products\c1d8fdaf-fd72-4301-9487-74aa8dc65874.jpg
+++js
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\js\
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\bootstrap\dist\js\
+++product.js
+++site.js
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\js\site.js
+++lib
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\
+++favicon.ico
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\favicon.ico
+++Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation (6.0.5)
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4912
+++Microsoft.EntityFrameworkCore.Tools (6.0.5)
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4917
+++Swashbuckle.AspNetCore (6.3.0)
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4915
 ++Areas
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\
 ++Admin
@@ -164,28 +207,21 @@ i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admi
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\models\
 ++Views
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\views\
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\customer\views\
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\views\
 ++Category
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\
-++Create.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\create.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\create.cshtml
-++Delete.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\delete.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\delete.cshtml
-++Edit.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\edit.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\edit.cshtml
-++Index.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\index.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\index.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\product\index.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\customer\views\home\index.cshtml
 ++CoverType
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\
 ++Product
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\product\
+++Index.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\product\index.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\index.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\index.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\customer\views\home\index.cshtml
+++Upsert.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\product\upsert.cshtml
 ++_ViewImports.cshtml
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\_viewimports.cshtml
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\views\_viewimports.cshtml
@@ -216,28 +252,12 @@ i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\appsetting
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\program.cs
 ++ScaffoldingReadMe.txt
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\scaffoldingreadme.txt
-++未探索到任何服務相依性
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4739
-++launchSettings.json
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\properties\launchsettings.json
-++css
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\css\
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\bootstrap\dist\css\
-++js
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\js\
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\bootstrap\dist\js\
-++lib
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\
-++favicon.ico
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\favicon.ico
-++Upsert.cshtml
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\product\upsert.cshtml
+++偵測到 connectionId 為 'ConnectionStrings:DefaultConnecting' 的 SQL Server 資料庫 相依性
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4999
 ++BootstrapTheme.css
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\css\bootstraptheme.css
 ++site.css
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\css\site.css
-++site.js
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\js\site.js
 ++bootstrap
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\bootstrap\
 ++jquery
@@ -262,12 +282,15 @@ i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\program files\dotnet\sdk\6.0.300\sdk
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\program files\dotnet\sdk\6.0.300\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
 ++Microsoft.AspNetCore.App
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\microsoft.aspnetcore.app
-++Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation (6.0.5)
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4784
-++Microsoft.EntityFrameworkCore.Tools (6.0.5)
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4794
-++Swashbuckle.AspNetCore (6.3.0)
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:>4790
+++Create.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\create.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\create.cshtml
+++Delete.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\delete.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\delete.cshtml
+++Edit.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\category\edit.cshtml
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\admin\views\covertype\edit.cshtml
 ++HomeController.cs
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\areas\customer\controllers\homecontroller.cs
 ++Home
@@ -391,8 +414,6 @@ i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\li
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 ++bootstrap.min.js.map
 i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-++NewFolder
-++images
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\
-++products
-i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\images\products\
+++JavaScript.js
+++productGetAll.js
+i:{d66a03e9-b341-4b00-a9df-248553e5c357}:c:\bulkybookweb\bulkybookweb\wwwroot\js\productgetall.js
