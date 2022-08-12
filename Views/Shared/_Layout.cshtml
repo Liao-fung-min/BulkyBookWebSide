@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/BootstrapTheme.css" />
     <link rel="stylesheet" href="~/BulkyBookWeb.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
 </head>
 <body>
     <header>
@@ -26,22 +25,17 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link " asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link " asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " asp-controller="Category" asp-action="Index">Category</a>
-                        </li>
-
-                        @* <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">內容管理</a>
                             <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
+                                <a class="dropdown-item " asp-area="Admin" asp-controller="Category" asp-action="Index">類別</a>
+                                <a class="dropdown-item " asp-area="Admin" asp-controller="CoverType" asp-action="Index">清單</a>
+                                <a class="dropdown-item " asp-area="Admin" asp-controller="Product" asp-action="Index">產品</a>
+                                <div class="dropdown-divider"></div>
                             </div>
-                            </li>*@
+                        </li>
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-sm-2" type="text" placeholder="Search">
@@ -54,17 +48,23 @@
 
     <div class="container">
         <main role="main" class="pb-3">
+            <partial name="_Notification"></partial>
             @RenderBody()
         </main>
     </div>
 
-   @* <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - BulkyBookWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>*@
-   
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+     <script src="https://cdn.tiny.cloud/1/xe1y3vfyb4wc383q5zd7avncq5q9w6tzs5moh8fxygytu8mi/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
