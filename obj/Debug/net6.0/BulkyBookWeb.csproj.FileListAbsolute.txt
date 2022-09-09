@@ -297,6 +297,9 @@ C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\refs\WindowsBase.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Humanizer.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\MessagePack.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
@@ -327,6 +330,8 @@ C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Rela
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -531,7 +536,12 @@ C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.DataAccess.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Models.dll
 C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.DataAccess.pdb
@@ -556,8 +566,3 @@ C:\BulkyBookWeb\BulkyBookWeb\obj\Debug\net6.0\refint\BulkyBookWeb.dll
 C:\BulkyBookWeb\BulkyBookWeb\obj\Debug\net6.0\BulkyBookWeb.pdb
 C:\BulkyBookWeb\BulkyBookWeb\obj\Debug\net6.0\BulkyBookWeb.genruntimeconfig.cache
 C:\BulkyBookWeb\BulkyBookWeb\obj\Debug\net6.0\ref\BulkyBookWeb.dll
-C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\BulkyBookWeb\BulkyBookWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
